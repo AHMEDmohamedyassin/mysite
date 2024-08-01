@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: "Cairo", sans-serif;
+    transition: 200ms;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components{
+    body {
+        @apply text-textColor
+    }
+
+    .container {
+        @apply w-full lg:px-10 px-6 py-20
+    }
+
+    .center{
+        @apply flex items-center justify-center
+    }
+
+    .scroll_header {
+        @apply bg-bgColor border-b-gray-200 border-b-[1px]
+    }
+
+    .mainButton{
+        @apply w-fit uppercase text-white lg:text-sm text-xs font-bold bg-mainColor lg:px-10 px-6 lg:py-3 py-2 rounded hover:bg-mainColor/80 hover:cursor-pointer shadow
+    }
+
+    .title{
+        @apply font-bold lg:text-4xl sm:text-3xl text-lg capitalize lg:leading-[60px]  mb-10
+    }
+
+    li.active_link {
+        @apply text-mainColor relative
+    }
+    li.active_link::after{
+        content: '';
+        @apply w-[15px] h-[5px] absolute -bottom-3 left-2/4 -translate-x-2/4 bg-mainColor
+    }
+    .side_menu .active_link{
+        @apply border-b-mainColor text-mainColor
+    }
+    .footer .active_link::after , .side_menu .active_link::after{
+        display: none;
+    }
+}
+
+
+.techAnimation{
+    position : relative
+}
+.techAnimation::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: #374eef
+}
+
+
+
+a{
+    cursor: pointer;
+    user-select: none;
 }

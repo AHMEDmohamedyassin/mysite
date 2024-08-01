@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutComp from "./components/about/AboutComp";
+import BannerComp from "./components/bannerComp/BannerComp";
+import ContactComp from "./components/contact/ContactComp";
+import FooterComp from "./components/footer/FooterComp";
+import HeaderComp from "./components/header/HeaderComp";
+import PricingComp from "./components/pricing/PricingComp";
+import ServicesComp from "./components/services/ServicesComp";
+import TechnologyComp from "./components/technology/TechnologyComp";
+import './functions/headerAnimationFunc'
+import './functions/technologyAnimationFunc'
+import './functions/pageAnimationFunc'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-[200vb]">
+      <HeaderComp/>
+      <BannerComp/>
+      <AboutComp/>
+      <ServicesComp/>
+      <ContactComp/>
+      <TechnologyComp/>
+      <PricingComp/>
+      <FooterComp/>
     </div>
   );
 }
