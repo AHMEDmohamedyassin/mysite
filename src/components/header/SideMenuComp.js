@@ -22,6 +22,9 @@ const SideMenuComp = () => {
                 <li data-link="contact" className='py-4 border-b-gray-200 border-b-[2px] hover:active_link cursor-pointer'>
                     <a className='font-bold text-sm uppercase'>{t("contact")}</a>
                 </li>
+                <li data-link="tech" className='py-4 border-b-gray-200 border-b-[2px] hover:active_link cursor-pointer'>
+                    <a className='font-bold text-sm uppercase'>{t("technologies")}</a>
+                </li>
                 <li data-link="pricing" className='py-4 border-b-gray-200 border-b-[2px] hover:active_link cursor-pointer'>
                     <a className='font-bold text-sm uppercase'>{t("pricing")}</a>
                 </li>
