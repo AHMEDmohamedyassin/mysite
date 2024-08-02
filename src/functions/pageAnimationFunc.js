@@ -9,13 +9,15 @@ $(function (){
         let window = $(document).height()
 
 
-        if(scrollY >= $('[data-section="about"]')?.offset().top && scrollY > scrolled){
-            $('[data-section="about"]').find("img").fadeIn(1000)
+        if(scrollY + 600 >= $('[data-section="about"]')?.offset().top && scrollY > scrolled){
+            $('[data-section="about"]').find("img").animate({
+                opacity : 1
+            } , 100)
         }
 
 
         $('[data-animate="services"] , [data-animate="pricing"]')?.each(function () {
-            if(scrollY >= $(this)?.offset().top - 400 && scrollY > scrolled){
+            if(scrollY >= $(this)?.offset().top - 600 && scrollY > scrolled){
                 $(this).css({
                     left : "0"
                 })

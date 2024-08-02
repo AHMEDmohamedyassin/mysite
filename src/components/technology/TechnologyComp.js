@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const TechnologyComp = () => {
     const {t} = useTranslation()
   return (
-    <div data-section="tech" className='h-[100vb] container center flex-col'>
+    <div data-section="tech" className='lg:h-[100vb] container center flex-col'>
 
         <h1 className='title'>{t("tech_title")}</h1>
         

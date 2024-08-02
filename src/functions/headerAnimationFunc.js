@@ -9,11 +9,11 @@ $(function () {
         else $('[data-animate="header"]').removeClass('scroll_header')
 
         // progress bar
-        let page_height = $(document).innerHeight() - $(window).innerHeight()
+        // let page_height = $(document).innerHeight() - $(window).innerHeight()
         let scroll_height = event.currentTarget.scrollY 
-        $(`[data-animate="header_progress_bar"]`).css({
-            width : (scroll_height/page_height)*100 + "%"
-        })
+        // $(`[data-animate="header_progress_bar"]`).css({
+        //     width : (scroll_height/page_height)*100 + "%"
+        // })
 
 
         // header links activate

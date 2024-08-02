@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const ContactComp = () => {
     const {t} = useTranslation()
   return (
-    <div data-section="contact" className='h-[100vb] relative container flex flex-col items-center overflow-hidden'>
+    <div data-section="contact" className='lg:h-[100vb] relative container flex flex-col items-center overflow-hidden'>
         {/* wave comp */}
         <WavesComp/>
 

@@ -13,7 +13,7 @@ const HeaderComp = () => {
     }
 
   return (
-    <div data-animate="header" className='container flex items-center justify-between py-6 max-sm:bg-bgColor max-sm:border-b-[1px] max-sm:border-gray-200 max-sm:shadow fixed z-10'>
+    <div data-animate="header" className='page_header container flex items-center justify-between py-6 max-sm:bg-bgColor max-sm:border-b-[1px] max-sm:border-gray-200 max-sm:shadow fixed z-10'>
         
         {/* progress bar */}
         <div data-animate="header_progress_bar" className='fixed top-0 left-0 w-0 h-[4px] bg-mainColor'></div>

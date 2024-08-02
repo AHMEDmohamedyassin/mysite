@@ -9,6 +9,7 @@ import TechnologyComp from "./components/technology/TechnologyComp";
 import './functions/headerAnimationFunc'
 import './functions/technologyAnimationFunc'
 import './functions/pageAnimationFunc'
+import PortfolioComp from "./components/portfolio/PortfolioComp";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ContactComp/>
       <TechnologyComp/>
       <PricingComp/>
+      <PortfolioComp/>
       <FooterComp/>
     </div>
   );

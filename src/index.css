@@ -68,3 +68,7 @@ a{
     cursor: pointer;
     user-select: none;
 }
+
+.page_header , .material-symbols-outlined{
+    user-select: none;
+}
