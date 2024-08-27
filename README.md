@@ -1,1 +1,1 @@
-https://mobarmeg.vercel.vercel
+https://mobarmeg.vercel.app
