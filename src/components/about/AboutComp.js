@@ -19,7 +19,7 @@ const AboutComp = () => {
 
         {/* image */}
         <div>
-            <img src='/icons/SVG/svg3.svg' style={{opacity:0}} className='h-full w-full object-cover mt-4'/>
+            <img src='/icons/logo.png' style={{opacity:0}} className='h-full w-full object-cover mt-4'/>
         </div>
     </div>
   )

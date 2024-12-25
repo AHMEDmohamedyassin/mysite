@@ -34,7 +34,7 @@ const FooterComp = () => {
             ]} />
         </div>
 
-        <img src='/icons/SVG/svg.svg' className='w-10' />
+        <img src='/icons/logo.png' className='w-10' />
 
         <div className='capitalize font-bold text-textColor/50 center'>{t("copyright")} {t("reserved")} <span className='text-2xl ms-1'>&copy;</span>2024 </div>
     </div>

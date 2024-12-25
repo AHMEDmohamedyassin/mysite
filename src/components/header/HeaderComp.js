@@ -22,7 +22,7 @@ const HeaderComp = () => {
         <div className='center gap-10'>
             {/* logo */}
             <div className='font-extrabold text-mainColor -my-20'>
-                <img src='/icons/SVG/svg.svg' className='h-10'/>
+                <img src='/icons/logo.png' className='h-10'/>
             </div>
 
             {/* urls  */}

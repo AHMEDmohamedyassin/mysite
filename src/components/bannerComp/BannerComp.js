@@ -18,7 +18,7 @@ const BannerComp = () => {
         </div>
 
         <div className='sm:w-2/4 rounded-full overflow-hidden' style={{scale:0.9}}>
-            <img src='/assets/1.jpg' className='h-full w-full object-cover' />
+            <img src='/icons/logo.png' className='h-full w-full object-cover' />
         </div>
     </div>
   )
